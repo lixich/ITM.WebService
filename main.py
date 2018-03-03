@@ -3,17 +3,21 @@
 from flask import Flask, Blueprint, jsonify, make_response, request, abort
 from flask_cors import CORS
 from content import app_content
-from stakeholder import app_stakeholder
-from user import app_user
-from test import app_test
 from employee import app_employee
+from stakeholder import app_stakeholder
+from requirement import app_requirement
+from module import app_module
+from test import app_test
+from manager import app_manager
 
 app = Flask(__name__)
 app.register_blueprint(app_content, url_prefix='/content')
-app.register_blueprint(app_stakeholder, url_prefix='/stakeholder')
-app.register_blueprint(app_user, url_prefix='/user')
-app.register_blueprint(app_test, url_prefix='/test')
 app.register_blueprint(app_employee, url_prefix='/employee')
+app.register_blueprint(app_stakeholder, url_prefix='/stakeholder')
+app.register_blueprint(app_requirement, url_prefix='/requirement')
+app.register_blueprint(app_module, url_prefix='/module')
+app.register_blueprint(app_test, url_prefix='/test')
+app.register_blueprint(app_manager, url_prefix='/manager')
 CORS(app, supports_credentials=True)
 
 @app.errorhandler(404)

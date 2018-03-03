@@ -1,7 +1,7 @@
-from flask import Blueprint, jsonify, abort, request, make_response, url_for
+from flask import Blueprint, jsonify, abort, request
+from db import update_record, create_record
 
 app_content = Blueprint('content', __name__)
-
 content_set = [
     {
         "Id": 1,
@@ -22,6 +22,15 @@ content_set = [
         "Projectcontent": "Необходимо создать программу, генерирующую примеры для решения квадратного уравнения."
     }
 ]
+content_class = {
+    "Id": int,
+    "Budget": int,
+    "Time": int,
+    "IterationTime": int,
+    "ProjectTitle": str,
+    "ProjectDescription": str,
+    "Projectcontent": str
+}
 
 @app_content.route('/', methods=['GET'])
 def get_content_set():
@@ -29,16 +38,10 @@ def get_content_set():
 
 @app_content.route('/', methods=['POST'])
 def create_content():
-    if not request.json or not 'title' in request.json:
+    if not request.json:
         abort(400)
-    content = {
-        'Id': content_set[-1]['Id'] + 1,
-        'Time': request.json['Time'],
-        'IterationTime': request.json['IterationTime'],
-        'ProjectTitle': request.json['ProjectTitle'],
-        'ProjectDescription': request.json['ProjectDescription'],
-        'Projectcontent': request.json['Projectcontent']
-    }
+    content = { 'Id': content_set[-1]['Id'] + 1 if len(content_set) else 1 }
+    create_record(content_class, request, content)
     content_set.append(content)
     return jsonify({'content': content}), 201
 
@@ -47,7 +50,7 @@ def get_content(content_id):
     contents = list(filter(lambda t: t['Id'] == content_id, content_set))
     if len(contents) == 0:
         abort(404)
-    return jsonify( { 'content': contents[0] } )
+    return jsonify({'content': contents[0]})
 
 @app_content.route('/<int:content_id>', methods=['PUT'])
 def update_content(content_id):
@@ -55,11 +58,7 @@ def update_content(content_id):
     if len(contents) == 0 or not request.json:
         abort(404)
     content = contents[0]
-    content['Time'] = request.json.get('Time', content['Time'])
-    content['IterationTime'] = request.json.get('IterationTime', content['IterationTime'])
-    content['ProjectTitle'] = request.json.get('ProjectTitle', content['ProjectTitle'])
-    content['ProjectDescription'] = request.json.get('ProjectDescription', content['ProjectDescription'])
-    content['Projectcontent'] = request.json.get('Projectcontent', content['Projectcontent'])
+    update_record(content_class, request, content)
     return jsonify({'content': content})
 
 @app_content.route('/<int:content_id>', methods=['DELETE'])
