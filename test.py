@@ -46,14 +46,14 @@ def create_test():
     test = { 'Id': test_set[-1]['Id'] + 1 if len(test_set) else 1 }
     create_record(test_class, request, test)
     test_set.append(test)
-    return jsonify({'test': test}), 201
+    return jsonify({'Test': test}), 201
 
 @app_test.route('/<int:test_id>', methods = ['GET'])
 def get_test(test_id):
     tests = list(filter(lambda t: t['Id'] == test_id, test_set))
     if len(tests) == 0:
         abort(404)
-    return jsonify({'test': tests[0]})
+    return jsonify({'Test': tests[0]})
 
 @app_test.route('/<int:test_id>', methods=['PUT'])
 def update_test(test_id):
@@ -62,7 +62,7 @@ def update_test(test_id):
         abort(404)
     test = tests[0]
     update_record(test_class, request, test)
-    return jsonify({'test': test})
+    return jsonify({'Test': test})
 
 @app_test.route('/<int:test_id>', methods=['DELETE'])
 def delete_test(test_id):
@@ -70,4 +70,4 @@ def delete_test(test_id):
     if len(tests) == 0:
         abort(404)
     test_set.remove(tests[0])
-    return jsonify({'result': True})
+    return jsonify({'Result': True})

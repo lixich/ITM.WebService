@@ -51,7 +51,7 @@ employee_class = {
 
 @app_employee.route('/', methods=['GET'])
 def get_employee_set():
-    return jsonify({'employee': employee_set})
+    return jsonify({'Employee': employee_set})
 
 @app_employee.route('/', methods=['POST'])
 def create_employee():
@@ -60,14 +60,14 @@ def create_employee():
     employee = { 'Id': employee_set[-1]['Id'] + 1 if len(employee_set) else 1 }
     create_record(employee_class, request, employee)
     employee_set.append(employee)
-    return jsonify({'employee': employee}), 201
+    return jsonify({'Employee': employee}), 201
 
 @app_employee.route('/<int:employee_id>', methods = ['GET'])
 def get_employee(employee_id):
     employees = list(filter(lambda t: t['Id'] == employee_id, employee_set))
     if len(employees) == 0:
         abort(404)
-    return jsonify({'employee': employees[0]})
+    return jsonify({'Employee': employees[0]})
 
 @app_employee.route('/<int:employee_id>', methods=['PUT'])
 def update_employee(employee_id):
@@ -76,7 +76,7 @@ def update_employee(employee_id):
         abort(404)
     employee = employees[0]
     update_record(employee_class, request, employee)
-    return jsonify({'employee': employee})
+    return jsonify({'Employee': employee})
 
 @app_employee.route('/<int:employee_id>', methods=['DELETE'])
 def delete_employee(employee_id):
@@ -84,4 +84,4 @@ def delete_employee(employee_id):
     if len(employees) == 0:
         abort(404)
     employee_set.remove(employees[0])
-    return jsonify({'result': True})
+    return jsonify({'Result': True})

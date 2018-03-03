@@ -62,7 +62,7 @@ requirement_class = {
 
 @app_requirement.route('/', methods=['GET'])
 def get_requirement_set():
-    return jsonify({'requirement': requirement_set})
+    return jsonify({'Requirement': requirement_set})
 
 @app_requirement.route('/', methods=['POST'])
 def create_requirement():
@@ -71,14 +71,14 @@ def create_requirement():
     requirement = { 'Id': requirement_set[-1]['Id'] + 1 if len(requirement_set) else 1 }
     create_record(requirement_class, request, requirement)
     requirement_set.append(requirement)
-    return jsonify({'requirement': requirement}), 201
+    return jsonify({'Requirement': requirement}), 201
 
 @app_requirement.route('/<int:requirement_id>', methods = ['GET'])
 def get_requirement(requirement_id):
     requirements = list(filter(lambda t: t['Id'] == requirement_id, requirement_set))
     if len(requirements) == 0:
         abort(404)
-    return jsonify({'requirement': requirements[0]})
+    return jsonify({'Requirement': requirements[0]})
 
 @app_requirement.route('/<int:requirement_id>', methods=['PUT'])
 def update_requirement(requirement_id):
@@ -87,7 +87,7 @@ def update_requirement(requirement_id):
         abort(404)
     requirement = requirements[0]
     update_record(requirement_class, request, requirement)
-    return jsonify({'requirement': requirement})
+    return jsonify({'Requirement': requirement})
 
 @app_requirement.route('/<int:requirement_id>', methods=['DELETE'])
 def delete_requirement(requirement_id):
@@ -95,4 +95,4 @@ def delete_requirement(requirement_id):
     if len(requirements) == 0:
         abort(404)
     requirement_set.remove(requirements[0])
-    return jsonify({'result': True})
+    return jsonify({'Result': True})

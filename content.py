@@ -10,7 +10,7 @@ content_set = [
         "IterationTime": 7,
         "ProjectTitle": "Сумма А и В",
         "ProjectDescription": "Реализовать калькулятор для сложения А и В.",
-        "Projectcontent": "Необходимо создать программу-кальулятор."
+        "ProjectTask": "Необходимо создать программу-кальулятор."
     },
     {
         "Id": 2,
@@ -19,7 +19,16 @@ content_set = [
         "IterationTime": 14,
         "ProjectTitle": "Квадратное уравнение",
         "ProjectDescription": "Директор школы хочет повысить успеваемость школьников по математике. По словам учителя математики, основная проблема – это объем примеров, которые решают школьники. Задачники предлагают малое количество примеров по решению квадратного уравнения. Составлять вручную примеры слишком трудозатратное занятие.",
-        "Projectcontent": "Необходимо создать программу, генерирующую примеры для решения квадратного уравнения."
+        "ProjectTask": "Необходимо создать программу, генерирующую примеры для решения квадратного уравнения."
+    },
+    {
+        "Id": 3,
+        "Budget": 1,
+        "Time": 1,
+        "IterationTime": 1,
+        "ProjectTitle": "Тест",
+        "ProjectDescription": " Тест",
+        "ProjectTask": "Тест"
     }
 ]
 content_class = {
@@ -29,12 +38,12 @@ content_class = {
     "IterationTime": int,
     "ProjectTitle": str,
     "ProjectDescription": str,
-    "Projectcontent": str
+    "ProjectTask": str
 }
 
 @app_content.route('/', methods=['GET'])
 def get_content_set():
-    return jsonify({'content': content_set})
+    return jsonify(content_set)
 
 @app_content.route('/', methods=['POST'])
 def create_content():
@@ -43,14 +52,14 @@ def create_content():
     content = { 'Id': content_set[-1]['Id'] + 1 if len(content_set) else 1 }
     create_record(content_class, request, content)
     content_set.append(content)
-    return jsonify({'content': content}), 201
+    return jsonify({'Content': content}), 201
 
 @app_content.route('/<int:content_id>', methods = ['GET'])
 def get_content(content_id):
     contents = list(filter(lambda t: t['Id'] == content_id, content_set))
     if len(contents) == 0:
         abort(404)
-    return jsonify({'content': contents[0]})
+    return jsonify({'Content': contents[0]})
 
 @app_content.route('/<int:content_id>', methods=['PUT'])
 def update_content(content_id):
@@ -59,7 +68,7 @@ def update_content(content_id):
         abort(404)
     content = contents[0]
     update_record(content_class, request, content)
-    return jsonify({'content': content})
+    return jsonify({'Content': content})
 
 @app_content.route('/<int:content_id>', methods=['DELETE'])
 def delete_content(content_id):
@@ -67,4 +76,4 @@ def delete_content(content_id):
     if len(contents) == 0:
         abort(404)
     content_set.remove(contents[0])
-    return jsonify({'result': True})
+    return jsonify({'Result': True})

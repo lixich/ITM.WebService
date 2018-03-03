@@ -47,7 +47,7 @@ module_class = {
 
 @app_module.route('/', methods=['GET'])
 def get_module_set():
-    return jsonify({'module': module_set})
+    return jsonify({'Module': module_set})
 
 @app_module.route('/', methods=['POST'])
 def create_module():
@@ -56,14 +56,14 @@ def create_module():
     module = { 'Id': module_set[-1]['Id'] + 1 if len(module_set) else 1 }
     create_record(module_class, request, module)
     module_set.append(module)
-    return jsonify({'module': module}), 201
+    return jsonify({'Module': module}), 201
 
 @app_module.route('/<int:module_id>', methods = ['GET'])
 def get_module(module_id):
     modules = list(filter(lambda t: t['Id'] == module_id, module_set))
     if len(modules) == 0:
         abort(404)
-    return jsonify({'module': modules[0]})
+    return jsonify({'Module': modules[0]})
 
 @app_module.route('/<int:module_id>', methods=['PUT'])
 def update_module(module_id):
@@ -72,7 +72,7 @@ def update_module(module_id):
         abort(404)
     module = modules[0]
     update_record(module_class, request, module)
-    return jsonify({'module': module})
+    return jsonify({'Module': module})
 
 @app_module.route('/<int:module_id>', methods=['DELETE'])
 def delete_module(module_id):
@@ -80,4 +80,4 @@ def delete_module(module_id):
     if len(modules) == 0:
         abort(404)
     module_set.remove(modules[0])
-    return jsonify({'result': True})
+    return jsonify({'Result': True})
