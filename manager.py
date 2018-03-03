@@ -28,7 +28,7 @@ manager_class = {
 
 @app_manager.route('/', methods=['GET'])
 def get_manager_set():
-    return jsonify({'Manager': manager_set})
+    return jsonify(manager_set)
 
 @app_manager.route('/', methods=['POST'])
 def create_manager():
@@ -37,14 +37,14 @@ def create_manager():
     manager = { 'Id': manager_set[-1]['Id'] + 1 if len(manager_set) else 1 }
     create_record(manager_class, request, manager)
     manager_set.append(manager)
-    return jsonify({'Manager': manager}), 201
+    return jsonify(manager), 201
 
 @app_manager.route('/<int:manager_id>', methods = ['GET'])
 def get_manager(manager_id):
     managers = list(filter(lambda t: t['Id'] == manager_id, manager_set))
     if len(managers) == 0:
         abort(404)
-    return jsonify({'Manager': managers[0]})
+    return jsonify(managers[0])
 
 @app_manager.route('/<int:manager_id>', methods=['PUT'])
 def update_manager(manager_id):
@@ -53,7 +53,7 @@ def update_manager(manager_id):
         abort(404)
     manager = managers[0]
     update_record(manager_class, request, manager)
-    return jsonify({'Manager': manager})
+    return jsonify(manager)
 
 @app_manager.route('/<int:manager_id>', methods=['DELETE'])
 def delete_manager(manager_id):

@@ -31,7 +31,7 @@ stakeholder_class = {
 
 @app_stakeholder.route('/', methods=['GET'])
 def get_stakeholder_set():
-    return jsonify({'Stakeholder': stakeholder_set})
+    return jsonify(stakeholder_set)
 
 @app_stakeholder.route('/', methods=['POST'])
 def create_stakeholder():
@@ -40,14 +40,14 @@ def create_stakeholder():
     stakeholder = { 'Id': stakeholder_set[-1]['Id'] + 1 if len(stakeholder_set) else 1 }
     create_record(stakeholder_class, request, stakeholder)
     stakeholder_set.append(stakeholder)
-    return jsonify({'Stakeholder': stakeholder}), 201
+    return jsonify(stakeholder), 201
 
 @app_stakeholder.route('/<int:stakeholder_id>', methods = ['GET'])
 def get_stakeholder(stakeholder_id):
     stakeholders = list(filter(lambda t: t['Id'] == stakeholder_id, stakeholder_set))
     if len(stakeholders) == 0:
         abort(404)
-    return jsonify({'Stakeholder': stakeholders[0]})
+    return jsonify(stakeholders[0])
 
 @app_stakeholder.route('/<int:stakeholder_id>', methods=['PUT'])
 def update_stakeholder(stakeholder_id):
@@ -56,7 +56,7 @@ def update_stakeholder(stakeholder_id):
         abort(404)
     stakeholder = stakeholders[0]
     update_record(stakeholder_class, request, stakeholder)
-    return jsonify({'Stakeholder': stakeholder})
+    return jsonify(stakeholder)
 
 @app_stakeholder.route('/<int:stakeholder_id>', methods=['DELETE'])
 def delete_stakeholder(stakeholder_id):

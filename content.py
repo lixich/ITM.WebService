@@ -55,14 +55,14 @@ def create_content():
     content = { 'Id': content_set[-1]['Id'] + 1 if len(content_set) else 1 }
     create_record(content_class, request, content)
     content_set.append(content)
-    return jsonify({'Content': content}), 201
+    return jsonify(content), 201
 
 @app_content.route('/<int:content_id>', methods = ['GET'])
 def get_full_content(content_id):
     contents = list(filter(lambda t: t['Id'] == content_id, content_set))
     if len(contents) == 0:
         abort(404)
-    return jsonify({'Content': contents[0]})
+    return jsonify( contents[0])
 
 @app_content.route('_full/<int:content_id>', methods = ['GET'])
 def get_content(content_id):
@@ -72,17 +72,17 @@ def get_content(content_id):
     content = contents[0].copy()
 
     requirements = list(filter(lambda t: t['ContentId'] == content_id, requirement_set))
-    content['Requirements'] = requirements
 
     stakeholders_id = set(req['StakeholderId'] for req in requirements)
     stakeholders = list(filter(lambda s: s['Id'] in stakeholders_id , stakeholder_set))
-    content['Stakeholders'] = stakeholders
 
     requirements_id = set(req['Id'] for req in requirements)
     modules = list(filter(lambda mod: mod['RequirementId'] in requirements_id , module_set))
-    content['Modules'] = modules
 
-    return jsonify({'Content': content})
+    return jsonify({'Content': content,
+                    'Requirements':requirements,
+                    'Stakeholders':stakeholders,
+                    'Modules':modules})
 
 @app_content.route('/<int:content_id>', methods=['PUT'])
 def update_content(content_id):
@@ -91,7 +91,7 @@ def update_content(content_id):
         abort(404)
     content = contents[0]
     update_record(content_class, request, content)
-    return jsonify({'Content': content})
+    return jsonify(content)
 
 @app_content.route('/<int:content_id>', methods=['DELETE'])
 def delete_content(content_id):
