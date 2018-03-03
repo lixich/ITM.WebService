@@ -1,5 +1,8 @@
 from flask import Blueprint, jsonify, abort, request
 from db import update_record, create_record
+from requirement import requirement_set
+from stakeholder import stakeholder_set
+from module import module_set
 
 app_content = Blueprint('content', __name__)
 content_set = [
@@ -55,11 +58,31 @@ def create_content():
     return jsonify({'Content': content}), 201
 
 @app_content.route('/<int:content_id>', methods = ['GET'])
-def get_content(content_id):
+def get_full_content(content_id):
     contents = list(filter(lambda t: t['Id'] == content_id, content_set))
     if len(contents) == 0:
         abort(404)
     return jsonify({'Content': contents[0]})
+
+@app_content.route('_full/<int:content_id>', methods = ['GET'])
+def get_content(content_id):
+    contents = list(filter(lambda t: t['Id'] == content_id, content_set))
+    if len(contents) == 0:
+        abort(404)
+    content = contents[0].copy()
+
+    requirements = list(filter(lambda t: t['ContentId'] == content_id, requirement_set))
+    content['Requirements'] = requirements
+
+    stakeholders_id = set(req['StakeholderId'] for req in requirements)
+    stakeholders = list(filter(lambda s: s['Id'] in stakeholders_id , stakeholder_set))
+    content['Stakeholders'] = stakeholders
+
+    requirements_id = set(req['Id'] for req in requirements)
+    modules = list(filter(lambda mod: mod['RequirementId'] in requirements_id , module_set))
+    content['Modules'] = modules
+
+    return jsonify({'Content': content})
 
 @app_content.route('/<int:content_id>', methods=['PUT'])
 def update_content(content_id):
