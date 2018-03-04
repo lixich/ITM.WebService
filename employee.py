@@ -13,7 +13,7 @@ employee_set = [
         "TesterSkill": 35,
         "TesterCapacity": 200,
         "Salary": 300,
-        "Image" : "https://www.marvellouscutouts.co.uk/wp-content/uploads/2017/10/Beckham.jpg"
+        "Image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmI-9hjc42YGwKHasnKE_sUekRsGxi_x5-BW_8rIw0V3CD6cR_"
     },
     {
         "Id": 2,
