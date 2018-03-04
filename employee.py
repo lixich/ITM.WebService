@@ -1,41 +1,65 @@
 from flask import Blueprint, jsonify, abort, request
 from db import update_record, create_record
+import os
 
 app_employee = Blueprint('employee', __name__)
 employee_set = [
     {
         "Id": 1,
         "Name": 'Алексей',
-        "AnalystSkill": 0,
-        "AnalystCapacity": 0,
-        "DeveloperSkill": 0,
-        "DeveloperCapacity": 0,
-        "TesterSkill": 0,
-        "TesterCapacity": 0,
-        "Salary": 0
+        "AnalystSkill": 70,
+        "AnalystCapacity": 5,
+        "DeveloperSkill": 75,
+        "DeveloperCapacity": 100,
+        "TesterSkill": 35,
+        "TesterCapacity": 200,
+        "Salary": 300,
+        "Image" :  os.getcwd() + "\\Images\\Aleksei.jpg"
     },
     {
         "Id": 2,
         "Name": 'Андрей',
-        "AnalystSkill": 0,
-        "AnalystCapacity": 0,
-        "DeveloperSkill": 0,
-        "DeveloperCapacity": 0,
-        "TesterSkill": 0,
-        "TesterCapacity": 0,
-        "Salary": 0
+        "AnalystSkill": 25,
+        "AnalystCapacity": 4,
+        "DeveloperSkill": 60,
+        "DeveloperCapacity": 200,
+        "TesterSkill": 90,
+        "TesterCapacity": 100,
+        "Salary": 200
     },
     {
         "Id": 3,
         "Name": 'Александр',
-        "AnalystSkill": 0,
-        "AnalystCapacity": 0,
-        "DeveloperSkill": 0,
-        "DeveloperCapacity": 0,
-        "TesterSkill": 0,
-        "TesterCapacity": 0,
-        "Salary": 0
+        "AnalystSkill": 35,
+        "AnalystCapacity": 1,
+        "DeveloperSkill": 85,
+        "DeveloperCapacity": 200,
+        "TesterSkill": 75,
+        "TesterCapacity": 150,
+        "Salary": 400
     },
+        {
+        "Id": 4,
+        "Name": 'Татьяна',
+        "AnalystSkill": 95,
+        "AnalystCapacity": 5,
+        "DeveloperSkill": 25,
+        "DeveloperCapacity": 100,
+        "TesterSkill": 70,
+        "TesterCapacity": 150,
+        "Salary": 500
+    },
+    {
+        "Id": 5,
+        "Name": 'Мария',
+        "AnalystSkill": 60,
+        "AnalystCapacity": 2,
+        "DeveloperSkill": 35,
+        "DeveloperCapacity": 100,
+        "TesterSkill": 55,
+        "TesterCapacity": 200,
+        "Salary": 100
+    }
 ]
 employee_class = {
     "Id": int,
