@@ -14,7 +14,7 @@ employee_set = [
         "TesterSkill": 35,
         "TesterCapacity": 200,
         "Salary": 300,
-        "Image" :  "https://www.marvellouscutouts.co.uk/wp-content/uploads/2017/10/Beckham.jpg"
+        "Image" : "https://www.marvellouscutouts.co.uk/wp-content/uploads/2017/10/Beckham.jpg"
     },
     {
         "Id": 2,
@@ -26,7 +26,7 @@ employee_set = [
         "TesterSkill": 90,
         "TesterCapacity": 100,
         "Salary": 200,
-        "Image" :  "https://s-media-cache-ak0.pinimg.com/originals/e7/8c/1c/e78c1c6f7471c201ea17f3a5b43ab275.jpg"
+        "Image" : "https://s-media-cache-ak0.pinimg.com/originals/e7/8c/1c/e78c1c6f7471c201ea17f3a5b43ab275.jpg"
     },
     {
         "Id": 3,
@@ -38,7 +38,7 @@ employee_set = [
         "TesterSkill": 75,
         "TesterCapacity": 150,
         "Salary": 400,
-        "Image" :  "http://www.mens-hairstyle.com/wp-content/uploads/2016/12/Classic-Undercut.jpg"
+        "Image" : "http://www.mens-hairstyle.com/wp-content/uploads/2016/12/Classic-Undercut.jpg"
     },
         {
         "Id": 4,
@@ -50,7 +50,7 @@ employee_set = [
         "TesterSkill": 70,
         "TesterCapacity": 150,
         "Salary": 500,
-        "Image" :  "https://knownetworth.com/uploads/thumb/seth-macfarlane-net-worth-350-350.jpeg"
+        "Image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6gUwi_vuu2c_RKmpgFvUbQyep9JqwY44VhpYDNVMbSorINWl6"
     },
     {
         "Id": 5,
@@ -62,7 +62,7 @@ employee_set = [
         "TesterSkill": 55,
         "TesterCapacity": 200,
         "Salary": 100,
-         "Image" :  "http://www.eshorthairstyles.com/wp-content/uploads/2017/04/19.Celebrity-Short-Hair-2016.jpg"
+         "Image" : "http://www.eshorthairstyles.com/wp-content/uploads/2017/04/19.Celebrity-Short-Hair-2016.jpg"
     }
 ]
 employee_class = {

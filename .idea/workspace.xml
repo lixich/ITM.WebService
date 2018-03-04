@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98a9f43c-74f0-4765-92b4-8f1c720aba1c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Images/Aleksandr.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Images/Aleksei.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Images/Andrei.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Images/Maria.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Images/Tatiana.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Images/Aleksandr.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Images/Aleksei.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Images/Andrei.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Images/Maria.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Images/Tatiana.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/employee.py" afterPath="$PROJECT_DIR$/employee.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +44,8 @@
       <file leaf-file-name="employee.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/employee.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="332">
+              <caret line="52" column="124" lean-forward="true" selection-start-line="52" selection-start-column="124" selection-end-line="52" selection-end-column="124" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -202,11 +202,6 @@
               <item name="ITM.WebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="ITM.WebService" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ITM.WebService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ITM.WebService" type="462c0819:PsiDirectoryNode" />
-              <item name="Images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -320,7 +315,8 @@
     <MESSAGE value="add content_full" />
     <MESSAGE value="upd json" />
     <MESSAGE value="add employee(content)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add employee(content)" />
+    <MESSAGE value="add Image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="332">
+          <caret line="52" column="124" lean-forward="true" selection-start-line="52" selection-start-column="124" selection-end-line="52" selection-end-column="124" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
