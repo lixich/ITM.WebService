@@ -46,6 +46,226 @@ requirement_set = [
         "ContentId": 1,
         "StakeholderId": 1,
         "MainRequirementId": 2
+    },
+    {
+        "Id": 5,
+        "Name": 'Вычисление квадратного уравнения',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": True,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 6,
+        "Name": 'Ввод a, b, c',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": True,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 5
+    },
+    {
+        "Id": 7,
+        "Name": 'Ввод целых чисел a, b, c',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": True,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 6
+    },
+    {
+        "Id": 8,
+        "Name": 'Ввод вещественных чисел a, b, c',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 3,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 7
+    },
+    {
+        "Id": 9,
+        "Name": 'Решение квадратного уравнения',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 5
+    },
+    {
+        "Id": 10,
+        "Name": 'Решение квадратного неравенства',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 4,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 5
+    },
+    {
+        "Id": 11,
+        "Name": 'Проверка решения пользователя',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 12,
+        "Name": 'Таймер (время на решение)',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 11
+    },
+    {
+        "Id": 13,
+        "Name": '10 мин',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 12
+    },
+    {
+        "Id": 14,
+        "Name": '20 мин',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 12
+    },
+    {
+        "Id": 15,
+        "Name": 'Отключение таймера',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 0,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 12
+    },
+    {
+        "Id": 16,
+        "Name": 'Отображение ответа',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": True,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 11
+    },
+    {
+        "Id": 17,
+        "Name": 'С помощью графика',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 3,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 16
+    },
+    {
+        "Id": 18,
+        "Name": 'С помощью формулы',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 3,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 16
+    },
+    {
+        "Id": 19,
+        "Name": 'Голосовое сообщение',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 3,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 16
+    },
+    {
+        "Id": 20,
+        "Name": 'Отображение решения',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 11
+    },
+    {
+        "Id": 21,
+        "Name": 'Статистика пользователей',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 22,
+        "Name": 'Среднее время решения',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 21
+    },
+    {
+        "Id": 23,
+        "Name": 'Кол-во решенных примеров',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 2,
+        "MainRequirementId": 21
+    },
+    {
+        "Id": 24,
+        "Name": 'Процент решенных примеров',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "IsImportant": False,
+        "IsFound": False,
+        "ContentId": 2,
+        "StakeholderId": 3,
+        "MainRequirementId": 21
     }
 ]
 requirement_class = {

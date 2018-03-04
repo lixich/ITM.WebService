@@ -34,6 +34,253 @@ module_set = [
         "IsImportant": True,
         "RequirementId": 4,
         "MainModuleId": None
+    },
+    {
+        "Id": 5,
+        "Name": 'Input(a,b,c)',
+        "CodeLinesNumber": 97,
+        "IsImportant": True,
+        "RequirementId": 6,
+        "MainModuleId": None
+    },
+    {
+        "Id": 6,
+        "Name": 'Input(int a, int b, int c)',
+        "CodeLinesNumber": 98,
+        "IsImportant": True,
+        "RequirementId": 7,
+        "MainModuleId": None
+    },
+    {
+        "Id": 7,
+        "Name": 'Input(double a, double b, double c)',
+        "CodeLinesNumber": 150,
+        "IsImportant": True,
+        "RequirementId": 8,
+        "MainModuleId": None
+    },
+    {
+        "Id": 8,
+        "Name": 'SolveEquation()',
+        "CodeLinesNumber": 250,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 9,
+        "Name": 'Sum()',
+        "CodeLinesNumber": 50,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 10,
+        "Name": 'Deduct()',
+        "CodeLinesNumber": 75,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 11,
+        "Name": 'Mod()',
+        "CodeLinesNumber": 80,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 12,
+        "Name": 'Div()',
+        "CodeLinesNumber": 80,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 13,
+        "Name": 'Multiply()',
+        "CodeLinesNumber": 230,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 14,
+        "Name": 'Sqrt()',
+        "CodeLinesNumber": 200,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 15,
+        "Name": 'Pow()',
+        "CodeLinesNumber": 150,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 16,
+        "Name": 'SolveInequality()',
+        "CodeLinesNumber": 93,
+        "IsImportant": True,
+        "RequirementId": 9,
+        "MainModuleId": None
+    },
+    {
+        "Id": 17,
+        "Name": 'Sum()',
+        "CodeLinesNumber": 60,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 18,
+        "Name": 'Deduct()',
+        "CodeLinesNumber": 80,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Name": 'Mod()',
+        "CodeLinesNumber": 90,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 20,
+        "Name": 'Div()',
+        "CodeLinesNumber": 95,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 21,
+        "Name": 'Multiply()',
+        "CodeLinesNumber": 250,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 22,
+        "Name": 'Sqrt()',
+        "CodeLinesNumber": 150,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 23,
+        "Name": 'Pow()',
+        "CodeLinesNumber": 160,
+        "IsImportant": True,
+        "RequirementId": 10,
+        "MainModuleId": None
+    },
+    {
+        "Id": 24,
+        "Name": 'Decision()',
+        "CodeLinesNumber": 100,
+        "IsImportant": True,
+        "RequirementId": 20,
+        "MainModuleId": None
+    },
+    {
+        "Id": 25,
+        "Name": 'Timer()',
+        "CodeLinesNumber": 120,
+        "IsImportant": True,
+        "RequirementId": 12,
+        "MainModuleId": None
+    },
+    {
+        "Id": 26,
+        "Name": 'TimerRun(int 10)',
+        "CodeLinesNumber": 80,
+        "IsImportant": False,
+        "RequirementId": 13,
+        "MainModuleId": None
+    },
+    {
+        "Id": 27,
+        "Name": 'TimerRun(int 20)',
+        "CodeLinesNumber": 130,
+        "IsImportant": False,
+        "RequirementId": 14,
+        "MainModuleId": None
+    },
+    {
+        "Id": 28,
+        "Name": 'TimerOff()',
+        "CodeLinesNumber": 250,
+        "IsImportant": False,
+        "RequirementId": 15,
+        "MainModuleId": None
+    },
+    {
+        "Id": 29,
+        "Name": 'Answer()',
+        "CodeLinesNumber": 150,
+        "IsImportant": True,
+        "RequirementId": 16,
+        "MainModuleId": None
+    },
+    {
+        "Id": 26,
+        "Name": 'ShowChart()',
+        "CodeLinesNumber": 110,
+        "IsImportant": True,
+        "RequirementId": 17,
+        "MainModuleId": None
+    },
+    {
+        "Id": 27,
+        "Name": 'ShowFormula()',
+        "CodeLinesNumber": 130,
+        "IsImportant": True,
+        "RequirementId": 18,
+        "MainModuleId": None
+    },
+    {
+        "Id": 28,
+        "Name": 'VoiceAnswer()',
+        "CodeLinesNumber": 115,
+        "IsImportant": True,
+        "RequirementId": 19,
+        "MainModuleId": None
+    },
+    {
+        "Id": 29,
+        "Name": 'AverageSolving()',
+        "CodeLinesNumber": 70,
+        "IsImportant": True,
+        "RequirementId": 22,
+        "MainModuleId": None
+    },
+    {
+        "Id": 30,
+        "Name": 'SuccessResult()',
+        "CodeLinesNumber": 50,
+        "IsImportant": True,
+        "RequirementId": 23,
+        "MainModuleId": None
+    },
+    {
+        "Id": 31,
+        "Name": 'ProcentSuccessResult()',
+        "CodeLinesNumber": 60,
+        "IsImportant": True,
+        "RequirementId": 24,
+        "MainModuleId": None
     }
 ]
 module_class = {
