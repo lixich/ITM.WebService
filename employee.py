@@ -1,6 +1,5 @@
 from flask import Blueprint, jsonify, abort, request
 from db import update_record, create_record
-import Images
 
 app_employee = Blueprint('employee', __name__)
 employee_set = [
@@ -63,6 +62,42 @@ employee_set = [
         "TesterCapacity": 200,
         "Salary": 100,
          "Image" : "http://www.eshorthairstyles.com/wp-content/uploads/2017/04/19.Celebrity-Short-Hair-2016.jpg"
+    },
+    {
+        "Id": 6,
+        "Name": 'Дмитрий',
+        "AnalystSkill": 30,
+        "AnalystCapacity": 1,
+        "DeveloperSkill": 90,
+        "DeveloperCapacity": 100,
+        "TesterSkill": 45,
+        "TesterCapacity": 100,
+        "Salary": 300,
+        "Image" : "https://www.tatacliq.com/que/wp-content/uploads/2017/11/square-face.jpg"
+    },
+    {
+        "Id": 7,
+        "Name": 'Вероника',
+        "AnalystSkill": 80,
+        "AnalystCapacity": 7,
+        "DeveloperSkill": 20,
+        "DeveloperCapacity": 200,
+        "TesterSkill": 75,
+        "TesterCapacity": 100,
+        "Salary": 350,
+        "Image" : "https://data.whicdn.com/images/108843757/large.jpg"
+    },
+    {
+        "Id": 8,
+        "Name": 'Екатерина',
+        "AnalystSkill": 65,
+        "AnalystCapacity": 4,
+        "DeveloperSkill": 75,
+        "DeveloperCapacity": 100,
+        "TesterSkill": 45,
+        "TesterCapacity": 100,
+        "Salary": 200,
+         "Image" : "https://hairstylecamp.com/wp-content/uploads/2015/12/sweet-sixteen-hairstyles-for-Girls-18.jpg"
     }
 ]
 employee_class = {
