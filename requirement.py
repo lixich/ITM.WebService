@@ -52,7 +52,7 @@ requirement_set = [
         "Name": 'Вычисление квадратного уравнения',
         "MinimumSkill": 60,
         "DetectionIterationNumber": 1,
-        "ImportantIndex": True,
+        "ImportantIndex": 10,
         "IsFound": True,
         "ContentId": 2,
         "StakeholderId": 2,
