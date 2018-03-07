@@ -3,6 +3,7 @@ from db import update_record, create_record
 
 app_requirement = Blueprint('requirement', __name__)
 requirement_set = [
+	# Проект "Сумма"
     {
         "Id": 1,
         "Name": 'Сумма А и В',
@@ -47,6 +48,7 @@ requirement_set = [
         "StakeholderId": 1,
         "MainRequirementId": 2
     },
+	# Проект "Уравнение"
     {
         "Id": 5,
         "Name": 'Вычисление квадратного уравнения',
@@ -266,6 +268,447 @@ requirement_set = [
         "ContentId": 2,
         "StakeholderId": 3,
         "MainRequirementId": 21
+    },
+	# Проект "Терминал"
+    {
+        "Id": 25,
+        "Name": 'Сохранение информации обо всех проданных билетах в течение дня',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 26,
+        "Name": 'Локальная база данных в устройстве',
+        "MinimumSkill": 35,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 27,
+        "Name": 'Сохранение номера билета',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 28,
+        "Name": 'Сохранение серии билета',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 8,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 29,
+        "Name": 'Сохранение даты и времени продажи билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 30,
+        "Name": 'Сохранение номера маршрута',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 4,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 31,
+        "Name": 'Сохранение идентификационного номера кондуктора',
+        "MinimumSkill": 50,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 25
+    },
+    {
+        "Id": 32,
+        "Name": 'Передача данных из устройства в базу данных заказчика',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 33,
+        "Name": 'Соединение с базой данных заказчика',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 34,
+        "Name": 'Передача номера билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 4,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 35,
+        "Name": 'Передача серии билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 36,
+        "Name": 'Передача даты и времени продажи билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 37,
+        "Name": 'Передача номера маршрута',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 4,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 38,
+        "Name": 'Передача идентификационного номера кондуктора',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 32
+    },
+    {
+        "Id": 39,
+        "Name": 'Печать билета',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 40,
+        "Name": 'Печать названия организации',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 41,
+        "Name": 'Печать ИНН',
+        "MinimumSkill": 80,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 42,
+        "Name": 'Печать номера билета',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 43,
+        "Name": 'Печать серии билета',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 5,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 44,
+        "Name": 'Печать даты и времени продажи билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 45,
+        "Name": 'Печать цены билета',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 2,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 46,
+        "Name": 'Печать номера маршрута',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 5,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 47,
+        "Name": 'Печать идентификационного номера кондуктора',
+        "MinimumSkill": 65,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 8,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 48,
+        "Name": 'Печать типа транспорта',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 49,
+        "Name": 'Печать «Автобус»',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 48
+    },
+    {
+        "Id": 50,
+        "Name": 'Печать «Троллейбус»',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 48
+    },
+    {
+        "Id": 51,
+        "Name": 'Печать «Трамвай»',
+        "MinimumSkill": 20,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 48
+    },
+    {
+        "Id": 52,
+        "Name": 'Печать предупреждения «Сохраняйте билет до конца поездки»',
+        "MinimumSkill": 30,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 53,
+        "Name": 'Печать рекламы на обратной стороне',
+        "MinimumSkill": 50,
+        "DetectionIterationNumber": 3,
+        "ImportantIndex": 1,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 39
+    },
+    {
+        "Id": 54,
+        "Name": 'Внесение информации о маршруте на день',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 55,
+        "Name": 'Номер маршрута',
+        "MinimumSkill": 0,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": True,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 54
+    },
+    {
+        "Id": 56,
+        "Name": 'Идентификационный номер кондуктора',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 54
+    },
+    {
+        "Id": 57,
+        "Name": 'Инициализация устройства',
+        "MinimumSkill": 50,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 54
+    },
+    {
+        "Id": 58,
+        "Name": 'Обнуление номера первого проданного билета (счетчик смены)',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 57
+    },
+    {
+        "Id": 59,
+        "Name": 'Проверка информации',
+        "MinimumSkill": 75,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 8,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 57
+    },
+    {
+        "Id": 60,
+        "Name": 'Картинка с рекламой',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 3,
+        "ImportantIndex": 4,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 54
+    },
+    {
+        "Id": 61,
+        "Name": 'Уведомления',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 62,
+        "Name": 'Уведомление о необходимости передачи информации из устройства в базу данных заказчика в конце дня',
+        "MinimumSkill": 50,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 61
+    },
+    {
+        "Id": 63,
+        "Name": 'Уведомление о переполнении базы данных устройства и необходимости вызова работника сервисной службы для очистки базы данных устройства',
+        "MinimumSkill": 70,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": 61
+    },
+    {
+        "Id": 64,
+        "Name": 'Возможность считывания информации с рабочей карты кондуктора об идентификации пользователя при запросе продажи билета через сканер устройства',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 3,
+        "StakeholderId": 4,
+        "MainRequirementId": None
     }
 ]
 requirement_class = {
