@@ -3,12 +3,14 @@ from db import update_record, create_record
 
 app_stakeholder = Blueprint('stakeholder', __name__)
 stakeholder_set = [
+	# Проект "Сумма"
     {
         "Id": 1,
         "Name": 'Заказчик',
         "Type": 'Client',
         "IsMain": True
     },
+	# Проект "Уравнение"
     {
         "Id": 2,
         "Name": 'Заказчик',
@@ -18,6 +20,31 @@ stakeholder_set = [
     {
         "Id": 3,
         "Name": 'Пользователи',
+        "Type": 'Users',
+        "IsMain": True
+    },
+	# Проект "Терминал"
+    {
+        "Id": 4,
+        "Name": 'Заказчик',
+        "Type": 'Client',
+        "IsMain": True
+    },
+    {
+        "Id": 5,
+        "Name": 'Кондукторы',
+        "Type": 'Users',
+        "IsMain": True
+    },
+    {
+        "Id": 6,
+        "Name": 'Техник по обслуживанию',
+        "Type": 'Users',
+        "IsMain": True
+    },
+    {
+        "Id": 7,
+        "Name": 'Работник сервисной службы по обслуживанию ККМ',
         "Type": 'Users',
         "IsMain": True
     }
