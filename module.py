@@ -7,7 +7,7 @@ module_set = [
         "Id": 1,
         "Name": 'Sum(a, b)',
         "CodeLinesNumber": 50,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 1,
         "MainModuleId": None
     },
@@ -15,7 +15,7 @@ module_set = [
         "Id": 2,
         "Name": 'Input(a,b)',
         "CodeLinesNumber": 97,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 2,
         "MainModuleId": None
     },
@@ -23,7 +23,7 @@ module_set = [
         "Id": 3,
         "Name": 'Input(int a, int b)',
         "CodeLinesNumber": 88,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 3,
         "MainModuleId": None
     },
@@ -31,7 +31,7 @@ module_set = [
         "Id": 4,
         "Name": 'Input(real a, real b)',
         "CodeLinesNumber": 150,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 4,
         "MainModuleId": None
     },
@@ -39,7 +39,7 @@ module_set = [
         "Id": 5,
         "Name": 'Input(a,b,c)',
         "CodeLinesNumber": 97,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 6,
         "MainModuleId": None
     },
@@ -47,7 +47,7 @@ module_set = [
         "Id": 6,
         "Name": 'Input(int a, int b, int c)',
         "CodeLinesNumber": 98,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 7,
         "MainModuleId": None
     },
@@ -55,7 +55,7 @@ module_set = [
         "Id": 7,
         "Name": 'Input(double a, double b, double c)',
         "CodeLinesNumber": 150,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 8,
         "MainModuleId": None
     },
@@ -63,7 +63,7 @@ module_set = [
         "Id": 8,
         "Name": 'SolveEquation()',
         "CodeLinesNumber": 250,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -71,7 +71,7 @@ module_set = [
         "Id": 9,
         "Name": 'Sum()',
         "CodeLinesNumber": 50,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -79,7 +79,7 @@ module_set = [
         "Id": 10,
         "Name": 'Deduct()',
         "CodeLinesNumber": 75,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -87,7 +87,7 @@ module_set = [
         "Id": 11,
         "Name": 'Mod()',
         "CodeLinesNumber": 80,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -95,7 +95,7 @@ module_set = [
         "Id": 12,
         "Name": 'Div()',
         "CodeLinesNumber": 80,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -103,7 +103,7 @@ module_set = [
         "Id": 13,
         "Name": 'Multiply()',
         "CodeLinesNumber": 230,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -111,7 +111,7 @@ module_set = [
         "Id": 14,
         "Name": 'Sqrt()',
         "CodeLinesNumber": 200,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -119,7 +119,7 @@ module_set = [
         "Id": 15,
         "Name": 'Pow()',
         "CodeLinesNumber": 150,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -127,7 +127,7 @@ module_set = [
         "Id": 16,
         "Name": 'SolveInequality()',
         "CodeLinesNumber": 93,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 9,
         "MainModuleId": None
     },
@@ -135,7 +135,7 @@ module_set = [
         "Id": 17,
         "Name": 'Sum()',
         "CodeLinesNumber": 60,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -143,14 +143,14 @@ module_set = [
         "Id": 18,
         "Name": 'Deduct()',
         "CodeLinesNumber": 80,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
     {
         "Name": 'Mod()',
         "CodeLinesNumber": 90,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -158,7 +158,7 @@ module_set = [
         "Id": 20,
         "Name": 'Div()',
         "CodeLinesNumber": 95,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -166,7 +166,7 @@ module_set = [
         "Id": 21,
         "Name": 'Multiply()',
         "CodeLinesNumber": 250,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -174,7 +174,7 @@ module_set = [
         "Id": 22,
         "Name": 'Sqrt()',
         "CodeLinesNumber": 150,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -182,7 +182,7 @@ module_set = [
         "Id": 23,
         "Name": 'Pow()',
         "CodeLinesNumber": 160,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 10,
         "MainModuleId": None
     },
@@ -190,7 +190,7 @@ module_set = [
         "Id": 24,
         "Name": 'Decision()',
         "CodeLinesNumber": 100,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 20,
         "MainModuleId": None
     },
@@ -198,7 +198,7 @@ module_set = [
         "Id": 25,
         "Name": 'Timer()',
         "CodeLinesNumber": 120,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 12,
         "MainModuleId": None
     },
@@ -206,7 +206,7 @@ module_set = [
         "Id": 26,
         "Name": 'TimerRun(int 10)',
         "CodeLinesNumber": 80,
-        "IsImportant": False,
+        "ImportantIndex": 0,
         "RequirementId": 13,
         "MainModuleId": None
     },
@@ -214,7 +214,7 @@ module_set = [
         "Id": 27,
         "Name": 'TimerRun(int 20)',
         "CodeLinesNumber": 130,
-        "IsImportant": False,
+        "ImportantIndex": 0,
         "RequirementId": 14,
         "MainModuleId": None
     },
@@ -222,7 +222,7 @@ module_set = [
         "Id": 28,
         "Name": 'TimerOff()',
         "CodeLinesNumber": 250,
-        "IsImportant": False,
+        "ImportantIndex": 0,
         "RequirementId": 15,
         "MainModuleId": None
     },
@@ -230,7 +230,7 @@ module_set = [
         "Id": 29,
         "Name": 'Answer()',
         "CodeLinesNumber": 150,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 16,
         "MainModuleId": None
     },
@@ -238,7 +238,7 @@ module_set = [
         "Id": 26,
         "Name": 'ShowChart()',
         "CodeLinesNumber": 110,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 17,
         "MainModuleId": None
     },
@@ -246,7 +246,7 @@ module_set = [
         "Id": 27,
         "Name": 'ShowFormula()',
         "CodeLinesNumber": 130,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 18,
         "MainModuleId": None
     },
@@ -254,7 +254,7 @@ module_set = [
         "Id": 28,
         "Name": 'VoiceAnswer()',
         "CodeLinesNumber": 115,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 19,
         "MainModuleId": None
     },
@@ -262,7 +262,7 @@ module_set = [
         "Id": 29,
         "Name": 'AverageSolving()',
         "CodeLinesNumber": 70,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 22,
         "MainModuleId": None
     },
@@ -270,7 +270,7 @@ module_set = [
         "Id": 30,
         "Name": 'SuccessResult()',
         "CodeLinesNumber": 50,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 23,
         "MainModuleId": None
     },
@@ -278,7 +278,7 @@ module_set = [
         "Id": 31,
         "Name": 'ProcentSuccessResult()',
         "CodeLinesNumber": 60,
-        "IsImportant": True,
+        "ImportantIndex": 10,
         "RequirementId": 24,
         "MainModuleId": None
     }
@@ -287,7 +287,7 @@ module_class = {
     "Id": int,
     "Name": str,
     "CodeLinesNumber": int,
-    "IsImportant": bool,
+    "ImportantIndex": int,
     "RequirementId": int,
     "MainModuleId": int
 }

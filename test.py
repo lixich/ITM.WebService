@@ -6,33 +6,33 @@ test_set = [
     {
         "Id": 1,
         "Name": 'Проверка входных данных',
-        "IsImportant": True
+        "ImportantIndex": True
     },
     {
         "Id": 2,
         "Name": 'Проверка выходных данных',
-        "IsImportant": True
+        "ImportantIndex": True
     },
     {
         "Id": 3,
         "Name": 'Классы входных данных',
-        "IsImportant": True
+        "ImportantIndex": True
     },
     {
         "Id": 4,
         "Name": 'Классы выходных данных',
-        "IsImportant": True
+        "ImportantIndex": True
     },
     {
         "Id": 5,
         "Name": 'Тестирование времени работы',
-        "IsImportant": False
+        "ImportantIndex": False
     }
 ]
 test_class = {
     'Id': int,
     'Name': str,
-    'IsImportant': bool
+    'ImportantIndex': bool
 }
 
 @app_test.route('/', methods=['GET'])
