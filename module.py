@@ -150,6 +150,7 @@ module_set = [
         "MainModuleId": None
     },
     {
+		"Id": 19, # Почему-то здесь не было этой строки (вдруг так и должно быть)
         "Name": 'Mod()',
         "CodeLinesNumber": 90,
         "ImportantIndex": 10,
@@ -326,7 +327,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 36,
+        "Id": 37,
         "Name": 'SaveSaleDatetime()',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -334,7 +335,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 37,
+        "Id": 38,
         "Name": 'SavePathNumber()',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -342,7 +343,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 38,
+        "Id": 39,
         "Name": 'SaveConductorID()',
         "CodeLinesNumber": 30,
         "ImportantIndex": 10,
@@ -350,7 +351,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 39,
+        "Id": 40,
         "Name": 'PushDayInfo()',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -358,7 +359,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 40,
+        "Id": 41,
         "Name": 'ConnectDataBase(string database)',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -366,7 +367,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 41,
+        "Id": 42,
         "Name": 'PushTicketNumber()',
         "CodeLinesNumber": 70,
         "ImportantIndex": 10,
@@ -374,7 +375,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 42,
+        "Id": 43,
         "Name": 'PushTicketSeries()',
         "CodeLinesNumber": 90,
         "ImportantIndex": 10,
@@ -382,7 +383,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 43,
+        "Id": 44,
         "Name": 'PushSaleDatetime()',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -390,7 +391,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 44,
+        "Id": 45,
         "Name": 'PushPathNumber()',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -398,7 +399,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 45,
+        "Id": 46,
         "Name": 'PushConductorID()',
         "CodeLinesNumber": 60,
         "ImportantIndex": 10,
@@ -406,7 +407,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 46,
+        "Id": 47,
         "Name": 'PrintTicket()',
         "CodeLinesNumber": 80,
         "ImportantIndex": 10,
@@ -414,7 +415,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 47,
+        "Id": 48,
         "Name": 'GetPrinterDeviceContext(IntPtr context)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -422,7 +423,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 48,
+        "Id": 49,
         "Name": 'PrintCompany(string company)',
         "CodeLinesNumber": 25,
         "ImportantIndex": 10,
@@ -430,7 +431,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 49,
+        "Id": 50,
         "Name": 'PrintИНН(string ИНН)',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -438,7 +439,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 50,
+        "Id": 51,
         "Name": 'PrintTicketNumber(int number)',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -446,7 +447,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 51,
+        "Id": 52,
         "Name": 'PrintTicketSeries(string series)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -454,7 +455,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 52,
+        "Id": 53,
         "Name": 'PrintSaleDatetime()',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -462,7 +463,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 53,
+        "Id": 54,
         "Name": 'PrintTicketPrice(double price)',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -470,7 +471,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 54,
+        "Id": 55,
         "Name": 'PrintPathNumber(int path)',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -478,7 +479,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 55,
+        "Id": 56,
         "Name": 'PrintConductorID()',
         "CodeLinesNumber": 75,
         "ImportantIndex": 10,
@@ -486,7 +487,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 56,
+        "Id": 57,
         "Name": 'ConvertIDToSafeNumber()',
         "CodeLinesNumber": 100,
         "ImportantIndex": 10,
@@ -494,7 +495,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 57,
+        "Id": 58,
         "Name": 'PrintTransportType(enum)',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -502,7 +503,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 58,
+        "Id": 59,
         "Name": 'Enum { Bus }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -510,7 +511,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 59,
+        "Id": 60,
         "Name": 'Enum { TrolleyBus }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -518,7 +519,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 60,
+        "Id": 61,
         "Name": 'Enum { Tram }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -526,7 +527,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 61,
+        "Id": 62,
         "Name": 'PrintWarning(string warning)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -534,7 +535,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 62,
+        "Id": 63,
         "Name": 'PrintAdevrt()',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -542,7 +543,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 63,
+        "Id": 64,
         "Name": 'SetPathInfo()',
         "CodeLinesNumber": 80,
         "ImportantIndex": 10,
@@ -550,7 +551,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 64,
+        "Id": 65,
         "Name": 'SetPathNumber(string number)',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -558,7 +559,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 65,
+        "Id": 66,
         "Name": 'SetConductorID(GUID id)',
         "CodeLinesNumber": 70,
         "ImportantIndex": 10,
@@ -566,7 +567,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 66,
+        "Id": 67,
         "Name": 'ConfirmConductorID()',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -574,7 +575,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 67,
+        "Id": 68,
         "Name": 'InitDevice()',
         "CodeLinesNumber": 240,
         "ImportantIndex": 10,
@@ -582,7 +583,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 68,
+        "Id": 69,
         "Name": 'LoadInfo()',
         "CodeLinesNumber": 250,
         "ImportantIndex": 10,
@@ -590,7 +591,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 69,
+        "Id": 70,
         "Name": 'ConfirmData()',
         "CodeLinesNumber": 160,
         "ImportantIndex": 10,
@@ -598,7 +599,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 70,
+        "Id": 71,
         "Name": 'SetTicketNumberZero()',
         "CodeLinesNumber": 10,
         "ImportantIndex": 10,
@@ -606,7 +607,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 71,
+        "Id": 72,
         "Name": 'CheckTicketNumber()',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -614,7 +615,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 72,
+        "Id": 73,
         "Name": 'CheckPathNumber()',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -622,7 +623,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 73,
+        "Id": 74,
         "Name": 'CheckConductorID()',
         "CodeLinesNumber": 80,
         "ImportantIndex": 10,
@@ -630,7 +631,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 74,
+        "Id": 75,
         "Name": 'SetAdvert(Image advert)',
         "CodeLinesNumber": 190,
         "ImportantIndex": 10,
@@ -638,7 +639,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 75,
+        "Id": 76,
         "Name": 'SetAdvertTimeLimit(int days)',
         "CodeLinesNumber": 30,
         "ImportantIndex": 10,
@@ -646,7 +647,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 76,
+        "Id": 77,
         "Name": 'CheckAdvertTimeLimit()',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -654,7 +655,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 77,
+        "Id": 78,
         "Name": 'Warn()',
         "CodeLinesNumber": 150,
         "ImportantIndex": 10,
@@ -662,7 +663,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 78,
+        "Id": 79,
         "Name": 'NeedToPushDataWarning()',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -670,7 +671,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 79,
+        "Id": 80,
         "Name": 'SaveWarningToDatabase()',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -678,7 +679,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 80,
+        "Id": 81,
         "Name": 'NeedToClearDataWarning()',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -686,7 +687,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 81,
+        "Id": 82,
         "Name": 'CheckDataToClear(double limit)',
         "CodeLinesNumber": 90,
         "ImportantIndex": 10,
@@ -694,7 +695,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 82,
+        "Id": 83,
         "Name": 'SetLimit(double limit)',
         "CodeLinesNumber": 10,
         "ImportantIndex": 10,
@@ -702,7 +703,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 83,
+        "Id": 84,
         "Name": 'SaveWarningToDatabase()',
         "CodeLinesNumber": 130,
         "ImportantIndex": 10,
@@ -710,7 +711,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 84,
+        "Id": 85,
         "Name": 'ReadConductorIDFromScaner(GUID id)',
         "CodeLinesNumber": 340,
         "ImportantIndex": 10,
@@ -718,7 +719,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 85,
+        "Id": 86,
         "Name": 'GetScanerContext(IntPtr context)',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -726,7 +727,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 86,
+        "Id": 87,
         "Name": 'CheckID(GUID id)',
         "CodeLinesNumber": 70,
         "ImportantIndex": 10,
@@ -734,7 +735,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 87,
+        "Id": 88,
         "Name": 'PrintScreenInfo()',
         "CodeLinesNumber": 100,
         "ImportantIndex": 10,
@@ -742,7 +743,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 88,
+        "Id": 89,
         "Name": 'GetScreenContext(IntPtr context)',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -750,7 +751,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 89,
+        "Id": 90,
         "Name": 'PrintScreenDatetime()',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -758,7 +759,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 90,
+        "Id": 91,
         "Name": 'PrintScreenTicketsCount(int count)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -766,7 +767,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 91,
+        "Id": 92,
         "Name": 'PrintScreenDeviceState(enum)',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -774,7 +775,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 92,
+        "Id": 93,
         "Name": 'Enum { Ready }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -782,7 +783,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 93,
+        "Id": 94,
         "Name": 'Enum { Payment }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -790,7 +791,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 94,
+        "Id": 95,
         "Name": 'Enum { Print }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -798,7 +799,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 95,
+        "Id": 96,
         "Name": 'Enum { Printed }',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
@@ -806,7 +807,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 96,
+        "Id": 97,
         "Name": 'ComputePrice()',
         "CodeLinesNumber": 240,
         "ImportantIndex": 10,
@@ -814,7 +815,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 97,
+        "Id": 98,
         "Name": 'InputTicketsCount(int count)',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -822,7 +823,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 98,
+        "Id": 99,
         "Name": 'InputSum(double money)',
         "CodeLinesNumber": 300,
         "ImportantIndex": 10,
@@ -830,7 +831,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 99,
+        "Id": 100,
         "Name": 'SetSafeModeManually()',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -838,7 +839,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 100,
+        "Id": 101,
         "Name": 'SetSafeModeTimeDelay(Time time)',
         "CodeLinesNumber": 210,
         "ImportantIndex": 10,
@@ -846,7 +847,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 101,
+        "Id": 102,
         "Name": 'UnlockSafeMode()',
         "CodeLinesNumber": 400,
         "ImportantIndex": 10,
@@ -854,7 +855,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 102,
+        "Id": 103,
         "Name": 'InputPassword(string password)',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -862,7 +863,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 103,
+        "Id": 104,
         "Name": 'CheckPassword()',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -870,7 +871,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 104,
+        "Id": 105,
         "Name": 'PrintScreenInfo()',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -878,7 +879,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 105,
+        "Id": 106,
         "Name": 'DetermineStatus()',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -886,7 +887,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 106,
+        "Id": 107,
         "Name": 'GetDeviceContext(IntPtr handle)',
         "CodeLinesNumber": 150,
         "ImportantIndex": 10,
@@ -894,7 +895,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 107,
+        "Id": 108,
         "Name": 'PrintScreenCharge(int charge)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -902,7 +903,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 108,
+        "Id": 109,
         "Name": 'GetCharge()',
         "CodeLinesNumber": 175,
         "ImportantIndex": 10,
@@ -910,7 +911,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 109,
+        "Id": 110,
         "Name": 'CheckVoltage(double voltage)',
         "CodeLinesNumber": 150,
         "ImportantIndex": 10,
@@ -918,7 +919,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 110,
+        "Id": 111,
         "Name": 'GetBatteryContext(IntPtr context)',
         "CodeLinesNumber": 350,
         "ImportantIndex": 10,
@@ -926,7 +927,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 111,
+        "Id": 112,
         "Name": 'PrintScreenCharging()',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -934,7 +935,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 112,
+        "Id": 113,
         "Name": 'GetChargingDeviceContext(IntPtr handle)',
         "CodeLinesNumber": 240,
         "ImportantIndex": 10,
@@ -942,7 +943,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 113,
+        "Id": 114,
         "Name": 'GetBatteryContext(IntPtr context)',
         "CodeLinesNumber": 350,
         "ImportantIndex": 10,
@@ -950,7 +951,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 114,
+        "Id": 115,
         "Name": 'CheckVoltage(double voltage)',
         "CodeLinesNumber": 150,
         "ImportantIndex": 10,
@@ -958,7 +959,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 115,
+        "Id": 116,
         "Name": 'PrintScreenPaperOff()',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -966,7 +967,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 116,
+        "Id": 117,
         "Name": 'GetPaperDeviceContext(IntPtr handle)',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -974,7 +975,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 117,
+        "Id": 118,
         "Name": 'CheckPaper()',
         "CodeLinesNumber": 230,
         "ImportantIndex": 10,
@@ -982,7 +983,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 118,
+        "Id": 119,
         "Name": 'PrintScreenInkOff()',
         "CodeLinesNumber": 80,
         "ImportantIndex": 10,
@@ -990,7 +991,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 119,
+        "Id": 120,
         "Name": 'GetInkDeviceContext(IntPtr handle)',
         "CodeLinesNumber": 280,
         "ImportantIndex": 10,
@@ -998,7 +999,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 120,
+        "Id": 121,
         "Name": 'CheckInk()',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -1006,7 +1007,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 121,
+        "Id": 122,
         "Name": 'ChangeValues()',
         "CodeLinesNumber": 120,
         "ImportantIndex": 10,
@@ -1014,7 +1015,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 122,
+        "Id": 123,
         "Name": 'SetTicketPrice(int price)',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -1022,7 +1023,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 123,
+        "Id": 124,
         "Name": 'SetWarning(string message)',
         "CodeLinesNumber": 30,
         "ImportantIndex": 10,
@@ -1030,7 +1031,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 124,
+        "Id": 125,
         "Name": 'ApplyPower()',
         "CodeLinesNumber": 530,
         "ImportantIndex": 10,
@@ -1038,7 +1039,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 125,
+        "Id": 126,
         "Name": 'GetDeviceContext(IntPtr context)',
         "CodeLinesNumber": 200,
         "ImportantIndex": 10,
@@ -1046,7 +1047,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 126,
+        "Id": 127,
         "Name": 'On()',
         "CodeLinesNumber": 400,
         "ImportantIndex": 10,
@@ -1054,7 +1055,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 127,
+        "Id": 128,
         "Name": 'Off()',
         "CodeLinesNumber": 600,
         "ImportantIndex": 10,
@@ -1062,7 +1063,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 128,
+        "Id": 129,
         "Name": 'Reload()',
         "CodeLinesNumber": 620,
         "ImportantIndex": 10,
@@ -1070,7 +1071,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 129,
+        "Id": 130,
         "Name": 'StructureData()',
         "CodeLinesNumber": 190,
         "ImportantIndex": 10,
@@ -1078,7 +1079,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 130,
+        "Id": 131,
         "Name": 'DownloadData()',
         "CodeLinesNumber": 240,
         "ImportantIndex": 10,
@@ -1086,7 +1087,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 131,
+        "Id": 132,
         "Name": 'GetSum()',
         "CodeLinesNumber": 40,
         "ImportantIndex": 10,
@@ -1094,7 +1095,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 132,
+        "Id": 133,
         "Name": 'ComputeSum()',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -1102,7 +1103,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 133,
+        "Id": 134,
         "Name": 'GetDatetime()',
         "CodeLinesNumber": 20,
         "ImportantIndex": 10,
@@ -1110,7 +1111,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 134,
+        "Id": 135,
         "Name": 'ProtectData()',
         "CodeLinesNumber": 700,
         "ImportantIndex": 10,
@@ -1118,7 +1119,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 135,
+        "Id": 136,
         "Name": 'InputPassword(string password)',
         "CodeLinesNumber": 50,
         "ImportantIndex": 10,
@@ -1126,7 +1127,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 136,
+        "Id": 137,
         "Name": 'CheckPassword(string password)',
         "CodeLinesNumber": 150,
         "ImportantIndex": 10,
@@ -1134,7 +1135,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 137,
+        "Id": 138,
         "Name": 'Crypt(string password)',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -1142,7 +1143,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 138,
+        "Id": 139,
         "Name": 'Encrypt(string password)',
         "CodeLinesNumber": 140,
         "ImportantIndex": 10,
@@ -1150,7 +1151,7 @@ module_set = [
         "MainModuleId": None
     },
 	{
-        "Id": 139,
+        "Id": 140,
         "Name": 'ClearDatabase(string database)',
         "CodeLinesNumber": 60,
         "ImportantIndex": 10,
