@@ -504,7 +504,7 @@ module_set = [
     },
 	{
         "Id": 59,
-        "Name": 'Enum { Bus }',
+        "Name": 'Enum ( Bus )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 49,
@@ -512,7 +512,7 @@ module_set = [
     },
 	{
         "Id": 60,
-        "Name": 'Enum { TrolleyBus }',
+        "Name": 'Enum ( TrolleyBus )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 50,
@@ -520,7 +520,7 @@ module_set = [
     },
 	{
         "Id": 61,
-        "Name": 'Enum { Tram }',
+        "Name": 'Enum ( Tram )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 51,
@@ -776,7 +776,7 @@ module_set = [
     },
 	{
         "Id": 93,
-        "Name": 'Enum { Ready }',
+        "Name": 'Enum ( Ready )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 69,
@@ -784,7 +784,7 @@ module_set = [
     },
 	{
         "Id": 94,
-        "Name": 'Enum { Payment }',
+        "Name": 'Enum ( Payment )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 70,
@@ -792,7 +792,7 @@ module_set = [
     },
 	{
         "Id": 95,
-        "Name": 'Enum { Print }',
+        "Name": 'Enum ( Print )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 71,
@@ -800,7 +800,7 @@ module_set = [
     },
 	{
         "Id": 96,
-        "Name": 'Enum { Printed }',
+        "Name": 'Enum ( Printed )',
         "CodeLinesNumber": 5,
         "ImportantIndex": 10,
         "RequirementId": 72,
