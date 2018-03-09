@@ -150,7 +150,7 @@ module_set = [
         "MainModuleId": None
     },
     {
-		"Id": 19, # Почему-то здесь не было этой строки (вдруг так и должно быть)
+		"Id": 19,
         "Name": 'Mod()',
         "CodeLinesNumber": 90,
         "ImportantIndex": 10,
@@ -1156,6 +1156,167 @@ module_set = [
         "CodeLinesNumber": 60,
         "ImportantIndex": 10,
         "RequirementId": 93,
+        "MainModuleId": None
+    },
+    # Проект "Сайт для библиотеки"
+	{
+        "Id": 141,
+        "Name": 'ChangeTheme()',
+        "CodeLinesNumber": 300,
+        "ImportantIndex": 10,
+        "RequirementId": 94,
+        "MainModuleId": None
+    },
+	{
+        "Id": 142,
+        "Name": 'SwitchLanguageMode()',
+        "CodeLinesNumber": 150,
+        "ImportantIndex": 10,
+        "RequirementId": 96,
+        "MainModuleId": None
+    },
+	{
+        "Id": 143,
+        "Name": 'SwitchEnglishMode()',
+        "CodeLinesNumber": 183,
+        "ImportantIndex": 10,
+        "RequirementId": 97,
+        "MainModuleId": None
+    },
+	{
+        "Id": 144,
+        "Name": 'SwitchFrenchMode()',
+        "CodeLinesNumber": 383,
+        "ImportantIndex": 10,
+        "RequirementId": 98,
+        "MainModuleId": None
+    },
+	{
+        "Id": 145,
+        "Name": 'VisuallyImpairedMode()',
+        "CodeLinesNumber": 250,
+        "ImportantIndex": 10,
+        "RequirementId": 99,
+        "MainModuleId": None
+    },
+	{
+        "Id": 146,
+        "Name": 'IncreaseFontSize()',
+        "CodeLinesNumber": 136,
+        "ImportantIndex": 10,
+        "RequirementId": 100,
+        "MainModuleId": None
+    },
+	{
+        "Id": 147,
+        "Name": 'DecreaseFontSize()',
+        "CodeLinesNumber": 160,
+        "ImportantIndex": 0,
+        "RequirementId": 100,
+        "MainModuleId": None
+    },
+	{
+        "Id": 148,
+        "Name": 'ReturnFontSize()',
+        "CodeLinesNumber": 153,
+        "ImportantIndex": 10,
+        "RequirementId": 100,
+        "MainModuleId": None
+    },
+	{
+        "Id": 149,
+        "Name": 'SwitchBlackWhiteMode()',
+        "CodeLinesNumber": 245,
+        "ImportantIndex": 10,
+        "RequirementId": 101,
+        "MainModuleId": None
+    },
+	{
+        "Id": 150,
+        "Name": 'TextScoring()',
+        "CodeLinesNumber": 130,
+        "ImportantIndex": 10,
+        "RequirementId": 102,
+        "MainModuleId": None
+    },
+	{
+        "Id": 151,
+        "Name": 'ChangeBackground()',
+        "CodeLinesNumber": 86,
+        "ImportantIndex": 10,
+        "RequirementId": 103,
+        "MainModuleId": None
+    },
+	{
+        "Id": 152,
+        "Name": 'ChangeFont()',
+        "CodeLinesNumber": 45,
+        "ImportantIndex": 10,
+        "RequirementId": 104,
+        "MainModuleId": None
+    },
+	{
+        "Id": 153,
+        "Name": 'SearchBarcodeId()',
+        "CodeLinesNumber": 150,
+        "ImportantIndex": 10,
+        "RequirementId": 106,
+        "MainModuleId": None
+    },
+	{
+        "Id": 154,
+        "Name": 'СonvertingBarcodeId()',
+        "CodeLinesNumber": 150,
+        "ImportantIndex": 10,
+        "RequirementId": 107,
+        "MainModuleId": None
+    },
+	{
+        "Id": 155,
+        "Name": 'WriteBarcodeId()',
+        "CodeLinesNumber": 120,
+        "ImportantIndex": 10,
+        "RequirementId": 108,
+        "MainModuleId": None
+    },
+	{
+        "Id": 156,
+        "Name": 'CheckBarcodeId()',
+        "CodeLinesNumber": 130,
+        "ImportantIndex": 10,
+        "RequirementId": 108,
+        "MainModuleId": None
+    },
+	{
+        "Id": 157,
+        "Name": 'OpenBarcodeId()',
+        "CodeLinesNumber": 190,
+        "ImportantIndex": 10,
+        "RequirementId": 108,
+        "MainModuleId": None
+    },
+	{
+        "Id": 158,
+        "Name": 'DeleteBarcodeId()',
+        "CodeLinesNumber": 57,
+        "ImportantIndex": 10,
+        "RequirementId": 109,
+        "MainModuleId": None
+    },
+	{
+        "Id": 159,
+        "Name": 'GenerateInvite()',
+        "CodeLinesNumber": 342,
+        "ImportantIndex": 10,
+        "RequirementId": 110,
+        "MainModuleId": None
+    },
+	{
+        "Id": 160,
+        "Name": 'PostMail()',
+        "CodeLinesNumber": 250,
+        "ImportantIndex": 10,
+        "RequirementId": 110,
         "MainModuleId": None
     }
 ]
