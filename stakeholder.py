@@ -47,6 +47,25 @@ stakeholder_set = [
         "Name": 'Работник сервисной службы по обслуживанию ККМ',
         "Type": 'Users',
         "IsMain": True
+    },
+    # Проект "Сайт для библиотеки"
+    {
+        "Id": 8,
+        "Name": 'Учебный отдел',
+        "Type": 'Client',
+        "IsMain": True
+    },
+    {
+        "Id": 9,
+        "Name": 'Библиотекари',
+        "Type": 'Users',
+        "IsMain": True
+    },
+    {
+        "Id": 10,
+        "Name": 'Студенты',
+        "Type": 'Users',
+        "IsMain": True
     }
 ]
 stakeholder_class = {

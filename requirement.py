@@ -1028,6 +1028,194 @@ requirement_set = [
         "ContentId": 3,
         "StakeholderId": 7,
         "MainRequirementId": 92
+    },
+    # Проект "Сайт для библиотеки"
+    {
+        "Id": 94,
+        "Name": 'Поменять цвет и шрифт',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": True,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 95,
+        "Name": 'Создать несколько режимов сайта',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 5,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 9,
+        "MainRequirementId": 94
+    },
+    {
+        "Id": 96,
+        "Name": 'Сделать смену языка',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 95
+    },
+    {
+        "Id": 97,
+        "Name": 'Сделать англоязычную версию',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 96
+    },
+    {
+        "Id": 98,
+        "Name": 'Сделать франкоязычную версию',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 5,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 10,
+        "MainRequirementId": 96
+    },
+    {
+        "Id": 99,
+        "Name": 'Сделать версию для слабовидящих',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 4,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 95
+    },
+    {
+        "Id": 100,
+        "Name": 'Сделать изменяющийся размер шрифта',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 9,
+        "MainRequirementId": 99
+    },
+    {
+        "Id": 101,
+        "Name": 'Сделать чёрно-белую версию сайта',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 3,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 10,
+        "MainRequirementId": 99
+    },
+    {
+        "Id": 102,
+        "Name": 'Сделать звуковое сопровождение текста',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 2,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 99
+    },
+    {
+        "Id": 103,
+        "Name": 'Сменить зелёный цвет на синий',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 10,
+        "MainRequirementId": 94
+    },
+    {
+        "Id": 104,
+        "Name": 'Заменить шрифт Times New Roman на Roboto Regular',
+        "MinimumSkill": 40,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 6,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 94
+    },
+    {
+        "Id": 105,
+        "Name": 'Считывание профиля по электронному абонементу',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 9,
+        "IsFound": True,
+        "ContentId": 4,
+        "StakeholderId": 9,
+        "MainRequirementId": None
+    },
+    {
+        "Id": 106,
+        "Name": 'Поиск профиля по коду абонемента',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": True,
+        "ContentId": 4,
+        "StakeholderId": 10,
+        "MainRequirementId": 105
+    },
+    {
+        "Id": 107,
+        "Name": 'Преобразование штрихкода в идентификационный номер',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 8,
+        "MainRequirementId": 105
+    },
+    {
+        "Id": 108,
+        "Name": 'Открытие студентом профиля с помощью кода',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 10,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 9,
+        "MainRequirementId": 105
+    },
+    {
+        "Id": 109,
+        "Name": 'Удаление штрих-кода из базы',
+        "MinimumSkill": 60,
+        "DetectionIterationNumber": 1,
+        "ImportantIndex": 8,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 9,
+        "MainRequirementId": 105
+    },
+    {
+        "Id": 110,
+        "Name": 'Автоматическая отправка сообщения студенту после изменения его профиля',
+        "MinimumSkill": 70,
+        "DetectionIterationNumber": 2,
+        "ImportantIndex": 7,
+        "IsFound": False,
+        "ContentId": 4,
+        "StakeholderId": 10,
+        "MainRequirementId": 105
     }
 ]
 requirement_class = {
