@@ -1363,5 +1363,10 @@ def delete_module(module_id):
     modules = [module for module in module_set if module['Id'] == module_id]
     if len(modules) == 0:
         abort(404)
-    module_set.remove(modules[0])
+    delete_modules(modules[0])
     return jsonify({'Result': True})
+
+def delete_modules(_module):
+    for module in module_set[:]:
+        if module['MainModuleId'] == _module['Id']: delete_modules(module)
+    module_set.remove(_module)

@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, abort, request
 from db import update_record, create_record
-from requirement import requirement_set
+from requirement import requirement_set, delete_modules
 from stakeholder import stakeholder_set
 from module import module_set
 
@@ -116,5 +116,10 @@ def delete_content(content_id):
     contents = [content for content in content_set if content['Id'] == content_id]
     if len(contents) == 0:
         abort(404)
+    for requirement in requirement_set[:]:
+        if requirement['ContentId'] == content_id:
+            for module in module_set[:]:
+                if module['RequirementId'] == requirement['Id']: delete_modules(module)
+            requirement_set.remove(requirement)
     content_set.remove(contents[0])
     return jsonify({'Result': True})

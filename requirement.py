@@ -1,5 +1,6 @@
 from flask import Blueprint, jsonify, abort, request
 from db import update_record, create_record
+from module import module_set, delete_modules
 
 app_requirement = Blueprint('requirement', __name__)
 requirement_set = [
@@ -1264,5 +1265,12 @@ def delete_requirement(requirement_id):
     requirements = [requirement for requirement in requirement_set if requirement['Id'] == requirement_id]
     if len(requirements) == 0:
         abort(404)
-    requirement_set.remove(requirements[0])
+    delete_requirements(requirements[0])
     return jsonify({'Result': True})
+
+def delete_requirements(_requirement):
+    for requirement in requirement_set[:]:
+        if requirement['MainRequirementId'] == _requirement['Id']: delete_requirements(requirement)
+    for module in module_set[:]:
+        if module['RequirementId'] == _requirement['Id']: delete_modules(module)
+    requirement_set.remove(_requirement)
