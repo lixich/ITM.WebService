@@ -13,6 +13,7 @@ log_set = [
     }
 ]
 
+global active_requests
 active_requests = 0
 
 def start_timer():

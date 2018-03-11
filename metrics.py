@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, abort, request
 import time
-from middleware import log_set, active_requests
+from middleware import log_set
 
 app_metrics = Blueprint('metrics', __name__)
 
@@ -10,6 +10,7 @@ def metrics():
 
 @app_metrics.route('/<float:seconds>', methods = ['GET'])
 def metrics_seconds(seconds):
+    from middleware import active_requests
     now_time = time.time()
     logs = list(filter(lambda log: log['StartTime'] >= now_time - seconds, log_set))
     average_response_time = 0.0
