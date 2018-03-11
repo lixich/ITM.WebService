@@ -8,7 +8,7 @@ app_metrics = Blueprint('metrics', __name__)
 def metrics():
     return jsonify(log_set)
 
-@app_metrics.route('/<int:seconds>', methods = ['GET'])
+@app_metrics.route('/<float:seconds>', methods = ['GET'])
 def metrics_seconds(seconds):
     now_time = time.time()
     logs = list(filter(lambda log: log['StartTime'] >= now_time - seconds, log_set))
