@@ -2,6 +2,7 @@
 #!flask/bin/python
 from flask import Flask, Blueprint, jsonify, make_response, request, abort, Response
 from flask_cors import CORS
+from time import sleep
 from middleware import setup_metrics
 from content import app_content
 from employee import app_employee
@@ -28,5 +29,10 @@ CORS(app, supports_credentials=True)
 def not_found(error):
     return make_response(jsonify({'Error': 'Not found'}), 404)
 
+@app.route('/')
+def home():
+    sleep(10)
+    return jsonify({'Hello': 'My friend'})
+
 if __name__ == '__main__':
-    app.run(threaded=True, debug=True)
+    app.run(debug=True)

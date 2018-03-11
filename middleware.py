@@ -13,10 +13,16 @@ log_set = [
     }
 ]
 
+active_requests = 0
+
 def start_timer():
+    global active_requests
+    active_requests += 1
     request.start_time = time.time()
 
 def stop_timer(response):
+    global active_requests
+    active_requests -= 1
     resp_time = time.time() - request.start_time
     #sys.stderr.write("Response time: %ss\n" % resp_time)
     #sys.stderr.write("Request path: %s Request method: %s Response status: %s\n" % (request.path, request.method, response.status_code))

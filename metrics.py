@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, abort, request
 import time
-from middleware import log_set
+from middleware import log_set, active_requests
 
 app_metrics = Blueprint('metrics', __name__)
 
@@ -17,7 +17,8 @@ def metrics_seconds(seconds):
         average_response_time = round(sum([log['ResponseTime'] for log in logs]) / len(logs), 5)
     return jsonify({
         'Count' : len(logs),
-        'AverageResponseTime': average_response_time
+        'AverageResponseTime': average_response_time,
+        'ActiveRequests' : active_requests
     })
 
 @app_metrics.route('/', methods = ['DELETE'])
